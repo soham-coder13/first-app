@@ -65,10 +65,10 @@ namespace CalculatePrice
                 if(dr["Item"].ToString().Equals("A") && dict_cart.Keys.Contains("A") && Convert.ToInt16(dict_cart["A"]) > 0)
                 {
                     int eligibleItems = Convert.ToInt16(Math.Floor(Convert.ToDecimal(Convert.ToInt16(dict_cart["A"]) / Convert.ToInt16(dr["Qty"]))));
-                    int UneligibleItems = Convert.ToInt16(dict_cart["A"]) % Convert.ToInt16(dr["Qty"]);
+                    int uneligibleItems = Convert.ToInt16(dict_cart["A"]) % Convert.ToInt16(dr["Qty"]);
 
                     finalPrice += Convert.ToDecimal(eligibleItems * Convert.ToDecimal(dr["Discount"]));
-                    dict_cart["A"] = UneligibleItems;
+                    dict_cart["A"] = uneligibleItems;
 
                     break;
                 }
@@ -82,6 +82,24 @@ namespace CalculatePrice
         private decimal Apply_B(Dictionary<string, int> dict_cart)
         {
             decimal finalPrice = 0;
+            Promotion prom = new Promotion();
+            DataTable dtDisc = prom.GetDiscounts();
+
+            foreach (DataRow dr in dtDisc.Rows)
+            {
+                if (dr["Item"].ToString().Equals("B") && dict_cart.Keys.Contains("B") && Convert.ToInt16(dict_cart["B"]) > 0)
+                {
+                    int eligibleItems = Convert.ToInt16(Math.Floor(Convert.ToDecimal(Convert.ToInt16(dict_cart["B"]) / Convert.ToInt16(dr["Qty"]))));
+                    int uneligibleItems = Convert.ToInt16(dict_cart["B"]) % Convert.ToInt16(dr["Qty"]);
+
+                    finalPrice += Convert.ToDecimal(eligibleItems * Convert.ToDecimal(dr["Discount"]));
+                    dict_cart["B"] = uneligibleItems;
+
+                    break;
+                }
+            }
+
+            finalPrice += GetTotalPrice(dict_cart);
 
             return finalPrice;
         }

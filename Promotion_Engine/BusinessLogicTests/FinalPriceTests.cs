@@ -44,14 +44,13 @@ namespace BusinessLogicTests
             Dictionary<string, int> dictCart = new Dictionary<string, int>();
             FinalPrice cal = new FinalPrice();
 
-            dictCart.Add("A", 3);
+            dictCart.Add("A", 5);
             dictCart.Add("B", 5);
             dictCart.Add("C", 1);
-            dictCart.Add("D", 1);
 
             decimal actualValue = cal.CalculatePriceAfterDiscounts(dictCart, "Apply-B");
 
-            Assert.IsTrue(actualValue == 280.0M);
+            Assert.IsTrue(actualValue == 390.0M);
         }
     }
 }
