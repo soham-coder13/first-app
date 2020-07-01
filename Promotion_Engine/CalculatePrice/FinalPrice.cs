@@ -121,7 +121,7 @@ namespace CalculatePrice
 
                         finalPrice += Convert.ToDecimal(eligibleItems * Convert.ToDecimal(dr["Discount"]));
                         dict_cart["C"] = uneligibleItems;
-                        dict_cart["D"] = dict_cart["D"] - dict_cart["C";]
+                        dict_cart["D"] = dict_cart["D"] - dict_cart["C"];
                     }
                     else if(Convert.ToInt16(dict_cart["C"]) > Convert.ToInt16(dict_cart["D"]))
                     {
