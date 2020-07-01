@@ -6,9 +6,11 @@ D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\Busin
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\CalculatePrice.dll
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\Dal.dll
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\CalculatePrice.pdb
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\Dal.pdb
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\obj\Debug\BusinessLogicTests.csprojAssemblyReference.cache
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\obj\Debug\BusinessLogicTests.csproj.CoreCompileInputs.cache
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\obj\Debug\BusinessLogicTests.csproj.CopyComplete

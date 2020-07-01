@@ -1,0 +1,6 @@
+D:\C# Programs\Git\first-app\Promotion_Engine\Dal\bin\Debug\Dal.dll
+D:\C# Programs\Git\first-app\Promotion_Engine\Dal\bin\Debug\Dal.pdb
+D:\C# Programs\Git\first-app\Promotion_Engine\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+D:\C# Programs\Git\first-app\Promotion_Engine\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+D:\C# Programs\Git\first-app\Promotion_Engine\Dal\obj\Debug\Dal.dll
+D:\C# Programs\Git\first-app\Promotion_Engine\Dal\obj\Debug\Dal.pdb

@@ -1,5 +1,9 @@
 D:\C# Programs\Git\first-app\Promotion_Engine\CalculatePrice\bin\Debug\CalculatePrice.dll
 D:\C# Programs\Git\first-app\Promotion_Engine\CalculatePrice\bin\Debug\CalculatePrice.pdb
+D:\C# Programs\Git\first-app\Promotion_Engine\CalculatePrice\bin\Debug\Dal.dll
+D:\C# Programs\Git\first-app\Promotion_Engine\CalculatePrice\bin\Debug\Dal.pdb
+D:\C# Programs\Git\first-app\Promotion_Engine\CalculatePrice\obj\Debug\CalculatePrice.csprojAssemblyReference.cache
 D:\C# Programs\Git\first-app\Promotion_Engine\CalculatePrice\obj\Debug\CalculatePrice.csproj.CoreCompileInputs.cache
+D:\C# Programs\Git\first-app\Promotion_Engine\CalculatePrice\obj\Debug\CalculatePrice.csproj.CopyComplete
 D:\C# Programs\Git\first-app\Promotion_Engine\CalculatePrice\obj\Debug\CalculatePrice.dll
 D:\C# Programs\Git\first-app\Promotion_Engine\CalculatePrice\obj\Debug\CalculatePrice.pdb

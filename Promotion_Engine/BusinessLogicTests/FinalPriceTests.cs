@@ -9,7 +9,7 @@ namespace BusinessLogicTests
     public class FinalPriceTests
     {
         [TestMethod]
-        public void Scenario_A_Test()
+        public void Scenario_NoPromotion_Test()
         {
             Dictionary<string, int> dictCart = new Dictionary<string, int>();
             FinalPrice cal = new FinalPrice();
@@ -18,13 +18,13 @@ namespace BusinessLogicTests
             dictCart.Add("B", 1);
             dictCart.Add("C", 1);
 
-            decimal expectedValue = cal.CalculatePriceAfterDiscounts(dictCart, "Apply-A");
+            decimal actualValue = cal.CalculatePriceAfterDiscounts(dictCart, string.Empty);
 
-            Assert.IsTrue(expectedValue == 100.0M);
+            Assert.IsTrue(actualValue == 100.0M);
         }
 
         [TestMethod]
-        public void Scenario_B_Test()
+        public void Scenario_A_Test()
         {
             Dictionary<string, int> dictCart = new Dictionary<string, int>();
             FinalPrice cal = new FinalPrice();
@@ -33,13 +33,13 @@ namespace BusinessLogicTests
             dictCart.Add("B", 5);
             dictCart.Add("C", 1);
 
-            decimal expectedValue = cal.CalculatePriceAfterDiscounts(dictCart, "Apply-A");
+            decimal actualValue = cal.CalculatePriceAfterDiscounts(dictCart, "Apply-A");
 
-            Assert.IsTrue(expectedValue == 370.0M);
+            Assert.IsTrue(actualValue == 370.0M);
         }
 
         [TestMethod]
-        public void Scenario_CD_Test()
+        public void Scenario_B_Test()
         {
             Dictionary<string, int> dictCart = new Dictionary<string, int>();
             FinalPrice cal = new FinalPrice();
@@ -49,9 +49,9 @@ namespace BusinessLogicTests
             dictCart.Add("C", 1);
             dictCart.Add("D", 1);
 
-            decimal expectedValue = cal.CalculatePriceAfterDiscounts(dictCart, "Apply-A");
+            decimal actualValue = cal.CalculatePriceAfterDiscounts(dictCart, "Apply-B");
 
-            Assert.IsTrue(expectedValue == 280.0M);
+            Assert.IsTrue(actualValue == 280.0M);
         }
     }
 }

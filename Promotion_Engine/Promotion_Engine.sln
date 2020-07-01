@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatePrice", "Calculate
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicTests", "BusinessLogicTests\BusinessLogicTests.csproj", "{1DB6EC43-296F-4925-AA7F-C55188C3942B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Access Layer", "Data Access Layer", "{AD14EEFD-941E-46C7-8C23-F8699EE3A967}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "Dal\Dal.csproj", "{CFF22DBB-E998-40F2-8C4C-A219B0AE654A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,12 +33,17 @@ Global
 		{1DB6EC43-296F-4925-AA7F-C55188C3942B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DB6EC43-296F-4925-AA7F-C55188C3942B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DB6EC43-296F-4925-AA7F-C55188C3942B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF22DBB-E998-40F2-8C4C-A219B0AE654A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF22DBB-E998-40F2-8C4C-A219B0AE654A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF22DBB-E998-40F2-8C4C-A219B0AE654A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF22DBB-E998-40F2-8C4C-A219B0AE654A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EC9C582C-C231-4FD9-B22F-8502070E8238} = {15CAA90F-9C2A-413E-AE72-933E2C926318}
+		{CFF22DBB-E998-40F2-8C4C-A219B0AE654A} = {AD14EEFD-941E-46C7-8C23-F8699EE3A967}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F3C345AC-1923-47BB-949A-D14A6C4A931E}
