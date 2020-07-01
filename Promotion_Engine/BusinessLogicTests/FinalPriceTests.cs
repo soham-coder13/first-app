@@ -35,7 +35,7 @@ namespace BusinessLogicTests
 
             decimal actualValue = cal.CalculatePriceAfterDiscounts(dictCart, "Apply-A");
 
-            Assert.IsTrue(actualValue == 370.0M);
+            Assert.IsTrue(actualValue == 400.0M);
         }
 
         [TestMethod]

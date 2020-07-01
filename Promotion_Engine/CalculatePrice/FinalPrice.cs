@@ -12,23 +12,85 @@ namespace CalculatePrice
     {
         public decimal CalculatePriceAfterDiscounts(Dictionary<string,int> dict_cart, string promotion)
         {
-            ItemPrice price = new ItemPrice();
             decimal totalPrice = 0.0m;
-            DataTable dtPriceList = price.GetItemPrice();
 
             //If promotion not applied, return the total price of the items added to cart
             if(string.IsNullOrEmpty(promotion))
             {
-                foreach(DataRow item in dtPriceList.Rows)
+                totalPrice = GetTotalPrice(dict_cart);
+            }
+            else
+            {
+                switch(promotion)
                 {
-                    if(dict_cart.Keys.Contains(item["Item"].ToString()))
-                    {
-                        totalPrice += Convert.ToDecimal(item["Price"]) * Convert.ToDecimal(dict_cart[item["Item"].ToString()]);
-                    }
+                    case "Apply-A": totalPrice = Apply_A(dict_cart);
+                        break;
+                    case "Apply-B": totalPrice = Apply_B(dict_cart);
+                        break;
+                    case "Apply-C_D": totalPrice = Apply_C_D(dict_cart);
+                        break;
+                    default: totalPrice = CalculatePriceAfterDiscounts(dict_cart, string.Empty);
+                        break;
                 }
             }
 
             return totalPrice;
+        }
+
+        private decimal GetTotalPrice(Dictionary<string, int> dict_cart)
+        {
+            decimal totalPrice = 0.0m;
+            ItemPrice price = new ItemPrice();
+            DataTable dtPriceList = price.GetItemPrice();
+
+            foreach (DataRow item in dtPriceList.Rows)
+            {
+                if (dict_cart.Keys.Contains(item["Item"].ToString()))
+                {
+                    totalPrice += Convert.ToDecimal(item["Price"]) * Convert.ToDecimal(dict_cart[item["Item"].ToString()]);
+                }
+            }
+
+            return totalPrice;
+        }
+
+        private decimal Apply_A(Dictionary<string, int> dict_cart)
+        {
+            decimal finalPrice = 0;
+            Promotion prom = new Promotion();
+            DataTable dtDisc = prom.GetDiscounts();
+
+            foreach(DataRow dr in dtDisc.Rows)
+            {
+                if(dr["Item"].ToString().Equals("A") && dict_cart.Keys.Contains("A") && Convert.ToInt16(dict_cart["A"]) > 0)
+                {
+                    int eligibleItems = Convert.ToInt16(Math.Floor(Convert.ToDecimal(Convert.ToInt16(dict_cart["A"]) / Convert.ToInt16(dr["Qty"]))));
+                    int UneligibleItems = Convert.ToInt16(dict_cart["A"]) % Convert.ToInt16(dr["Qty"]);
+
+                    finalPrice += Convert.ToDecimal(eligibleItems * Convert.ToDecimal(dr["Discount"]));
+                    dict_cart["A"] = UneligibleItems;
+
+                    break;
+                }
+            }
+
+            finalPrice += GetTotalPrice(dict_cart);
+
+            return finalPrice;
+        }
+
+        private decimal Apply_B(Dictionary<string, int> dict_cart)
+        {
+            decimal finalPrice = 0;
+
+            return finalPrice;
+        }
+
+        private decimal Apply_C_D(Dictionary<string, int> dict_cart)
+        {
+            decimal finalPrice = 0;
+
+            return finalPrice;
         }
     }
 }
