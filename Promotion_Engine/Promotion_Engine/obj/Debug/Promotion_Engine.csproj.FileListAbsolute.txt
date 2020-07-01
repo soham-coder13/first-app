@@ -1,0 +1,10 @@
+D:\C# Programs\Git\first-app\Promotion_Engine\Promotion_Engine\bin\Debug\Promotion_Engine.exe.config
+D:\C# Programs\Git\first-app\Promotion_Engine\Promotion_Engine\bin\Debug\Promotion_Engine.exe
+D:\C# Programs\Git\first-app\Promotion_Engine\Promotion_Engine\bin\Debug\Promotion_Engine.pdb
+D:\C# Programs\Git\first-app\Promotion_Engine\Promotion_Engine\bin\Debug\CalculatePrice.dll
+D:\C# Programs\Git\first-app\Promotion_Engine\Promotion_Engine\bin\Debug\CalculatePrice.pdb
+D:\C# Programs\Git\first-app\Promotion_Engine\Promotion_Engine\obj\Debug\Promotion_Engine.csprojAssemblyReference.cache
+D:\C# Programs\Git\first-app\Promotion_Engine\Promotion_Engine\obj\Debug\Promotion_Engine.csproj.CoreCompileInputs.cache
+D:\C# Programs\Git\first-app\Promotion_Engine\Promotion_Engine\obj\Debug\Promotion_Engine.csproj.CopyComplete
+D:\C# Programs\Git\first-app\Promotion_Engine\Promotion_Engine\obj\Debug\Promotion_Engine.exe
+D:\C# Programs\Git\first-app\Promotion_Engine\Promotion_Engine\obj\Debug\Promotion_Engine.pdb
