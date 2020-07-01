@@ -8,5 +8,9 @@ namespace CalculatePrice
 {
     public class FinalPrice
     {
+        public decimal CalculatePriceAfterDiscounts(Dictionary<string,int> dict_cart, string promotion)
+        {
+            return 0;
+        }
     }
 }
