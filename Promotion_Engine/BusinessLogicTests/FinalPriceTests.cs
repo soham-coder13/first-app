@@ -52,5 +52,21 @@ namespace BusinessLogicTests
 
             Assert.IsTrue(actualValue == 390.0M);
         }
+
+        [TestMethod]
+        public void Scenario_C_D_Test()
+        {
+            Dictionary<string, int> dictCart = new Dictionary<string, int>();
+            FinalPrice cal = new FinalPrice();
+
+            dictCart.Add("A", 3);
+            dictCart.Add("B", 5);
+            dictCart.Add("C", 1);
+            dictCart.Add("D", 1);
+
+            decimal actualValue = cal.CalculatePriceAfterDiscounts(dictCart, "Apply-C_D");
+
+            Assert.IsTrue(actualValue == 390.0M);
+        }
     }
 }
