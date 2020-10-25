@@ -5,7 +5,8 @@ PROJECT DESCRIPTION:
 This is a simple program that will calculate the total price of items (A,B,C,D) bought after applying discount (Coupon-A,Coupon-B,Coupon-C_D) on coupon selected by the User.
 
 PREREQUISITES:
-.Net Framework 4.8 and Visual Studio
+.Net Framework 4.8 and Visual Studio.
+Make Promotion_Engine_UI as the default project and run the application.
 
 EXAMPLE:
 Unit Price of A: 50
