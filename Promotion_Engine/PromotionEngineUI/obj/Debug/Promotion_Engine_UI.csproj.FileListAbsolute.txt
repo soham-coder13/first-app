@@ -28,3 +28,13 @@ D:\C# Programs\Git\Promotion_Engine\PromotionEngineUI\bin\Debug\Dal.pdb
 D:\C# Programs\Git\Promotion_Engine\PromotionEngineUI\obj\Debug\Promotion_Engine_UI.csprojResolveAssemblyReference.cache
 D:\C# Programs\Git\Promotion_Engine\PromotionEngineUI\obj\Debug\PromotionEngineUI.exe
 D:\C# Programs\Git\Promotion_Engine\PromotionEngineUI\obj\Debug\PromotionEngineUI.pdb
+D:\C# Programs\Git\first-app\Promotion_Engine\PromotionEngineUI\bin\Debug\PromotionEngineUI.exe.config
+D:\C# Programs\Git\first-app\Promotion_Engine\PromotionEngineUI\bin\Debug\PromotionEngineUI.exe
+D:\C# Programs\Git\first-app\Promotion_Engine\PromotionEngineUI\bin\Debug\PromotionEngineUI.pdb
+D:\C# Programs\Git\first-app\Promotion_Engine\PromotionEngineUI\bin\Debug\CalculatePrice.dll
+D:\C# Programs\Git\first-app\Promotion_Engine\PromotionEngineUI\bin\Debug\Dal.dll
+D:\C# Programs\Git\first-app\Promotion_Engine\PromotionEngineUI\bin\Debug\CalculatePrice.pdb
+D:\C# Programs\Git\first-app\Promotion_Engine\PromotionEngineUI\bin\Debug\Dal.pdb
+D:\C# Programs\Git\first-app\Promotion_Engine\PromotionEngineUI\obj\Debug\Promotion_Engine_UI.csprojResolveAssemblyReference.cache
+D:\C# Programs\Git\first-app\Promotion_Engine\PromotionEngineUI\obj\Debug\PromotionEngineUI.exe
+D:\C# Programs\Git\first-app\Promotion_Engine\PromotionEngineUI\obj\Debug\PromotionEngineUI.pdb
