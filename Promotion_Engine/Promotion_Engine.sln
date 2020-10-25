@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28010.2048
+VisualStudioVersion = 15.0.26228.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Promotion_Engine", "Promotion_Engine\Promotion_Engine.csproj", "{99DBC1CF-AE53-4614-BF79-20D4713DE321}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Promotion_Engine_UI", "Promotion_Engine\Promotion_Engine_UI.csproj", "{99DBC1CF-AE53-4614-BF79-20D4713DE321}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Logic", "Business Logic", "{15CAA90F-9C2A-413E-AE72-933E2C926318}"
 EndProject

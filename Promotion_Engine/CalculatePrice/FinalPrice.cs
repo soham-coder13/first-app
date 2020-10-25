@@ -114,7 +114,16 @@ namespace CalculatePrice
             {
                 if (dr["Item"].ToString().Equals("C;D") && dict_cart.Keys.Contains("C") && Convert.ToInt16(dict_cart["C"]) > 0 && dict_cart.Keys.Contains("D") && Convert.ToInt16(dict_cart["D"]) > 0)
                 {
-                    if(Convert.ToInt16(dict_cart["C"]) < Convert.ToInt16(dict_cart["D"]))
+                    if(Convert.ToInt16(dict_cart["C"]) == Convert.ToInt16(dict_cart["D"]))
+                    {
+                        int eligibleItems = Convert.ToInt16(Math.Floor(Convert.ToDecimal(Convert.ToInt16(dict_cart["D"]) / Convert.ToInt16(dr["Qty"]))));
+                        int uneligibleItems = Convert.ToInt16(dict_cart["D"]) % Convert.ToInt16(dr["Qty"]);
+
+                        finalPrice += Convert.ToDecimal(eligibleItems * Convert.ToDecimal(dr["Discount"]));
+                        dict_cart["D"] = 0;
+                        dict_cart["C"] = 0;
+                    }
+                    else if(Convert.ToInt16(dict_cart["C"]) < Convert.ToInt16(dict_cart["D"]))
                     {
                         int eligibleItems = Convert.ToInt16(Math.Floor(Convert.ToDecimal(Convert.ToInt16(dict_cart["C"]) / Convert.ToInt16(dr["Qty"]))));
                         int uneligibleItems = Convert.ToInt16(dict_cart["C"]) % Convert.ToInt16(dr["Qty"]);

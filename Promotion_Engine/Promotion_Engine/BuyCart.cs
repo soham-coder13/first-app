@@ -26,7 +26,9 @@ namespace Promotion_Engine
             Console.WriteLine("Please specify the quantity of D you want to order: ");
             int d = Convert.ToInt16(Console.ReadLine());
 
-            Console.WriteLine("Please specify the quantity of coupon you want to apply:\n 1. Apply-A  \n 2. Apply-B  \n 3. Apply-C_D");
+            Console.WriteLine("Please specify the coupon no you want to apply:\n 1. Apply-A  \n 2. Apply-B  \n 3. Apply-C_D\n");
+
+            Console.Write("Your Choice(1/2/3): ");
             int coupon = Convert.ToInt16(Console.ReadLine());
 
             Dictionary<string, int> dict = new Dictionary<string, int>();
@@ -52,9 +54,8 @@ namespace Promotion_Engine
                     totalValue = price.CalculatePriceAfterDiscounts(dict, "");
                     break;
             }
-
-            Console.WriteLine("");
-            Console.WriteLine("Your final price is: {0}", totalValue);
+            
+            Console.WriteLine("\nPlease pay Rs. {0}", totalValue);
             Console.ReadKey();
         }
     }

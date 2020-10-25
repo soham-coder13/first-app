@@ -11,8 +11,6 @@ D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\Calcu
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\bin\Debug\Dal.pdb
-D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\obj\Debug\BusinessLogicTests.csprojAssemblyReference.cache
-D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\obj\Debug\BusinessLogicTests.csproj.CoreCompileInputs.cache
-D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\obj\Debug\BusinessLogicTests.csproj.CopyComplete
+D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\obj\Debug\BusinessLogicTests.csprojResolveAssemblyReference.cache
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\obj\Debug\BusinessLogicTests.dll
 D:\C# Programs\Git\first-app\Promotion_Engine\BusinessLogicTests\obj\Debug\BusinessLogicTests.pdb
