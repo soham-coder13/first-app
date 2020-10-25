@@ -2,3 +2,7 @@ D:\C# Programs\Git\first-app\Promotion_Engine\Dal\bin\Debug\Dal.dll
 D:\C# Programs\Git\first-app\Promotion_Engine\Dal\bin\Debug\Dal.pdb
 D:\C# Programs\Git\first-app\Promotion_Engine\Dal\obj\Debug\Dal.dll
 D:\C# Programs\Git\first-app\Promotion_Engine\Dal\obj\Debug\Dal.pdb
+D:\C# Programs\Git\Promotion_Engine\Dal\bin\Debug\Dal.dll
+D:\C# Programs\Git\Promotion_Engine\Dal\bin\Debug\Dal.pdb
+D:\C# Programs\Git\Promotion_Engine\Dal\obj\Debug\Dal.dll
+D:\C# Programs\Git\Promotion_Engine\Dal\obj\Debug\Dal.pdb
