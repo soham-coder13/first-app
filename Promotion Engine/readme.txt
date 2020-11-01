@@ -1,19 +1,26 @@
 PROJECT:
-IDENTIFICATION AND REMOVAL OF CRACKS IN DIGITAL IMAGES
+Promotion Engine.
+
+PROJECT DESCRIPTION:
+This is a simple program that will calculate the total price of items (A,B,C,D) bought after applying 
+discount (Coupon-1,Coupon-2,Coupon-3) on coupon selected by the User.
 
 PREREQUISITES:
-TOOL USED : OpenCV
-PLATFORM : Microsoft Visual Studio 2010
+.Net Framework 4.8 and Visual Studio.
+Latest Node version and Angular CLI along any code editor elligble to run Angular.
 
-DESCRIPTION:
-Many paintings, especially old ones, suffer from breaks in the substrate, the paint, or the varnish. 
-These patterns are usually called cracks and can be caused by aging, drying, and mechanical factors. 
-Age cracks can result from non-uniform contraction in the canvas or wood-panel support of the painting, 
-which stresses the layers of the painting. 
-Drying cracks are usually caused by the evaporation of volatile paint components and the consequent shrinkage of the paint. 
-Finally, mechanical cracks result from painting deformations due to external causes, e.g. vibrations and impacts. 
-The appearance of cracks on paintings deteriorates the perceived image quality. 
-However, one can use digital image processing techniques to detect and eliminate the cracks on digitized paintings. 
+HOW TO RUN:
+1. Run the Web API code, this can be done in two ways. One way is to host the code in local IIS server, or open the code in Visual Studio and run it manually.
+2. Open the Angular code in code editor of your choice and type the command "ng serve --open" to run the code.
+
+AUTHOR:
+Soham Chakraborty
 
 LICENSE:
-This project belongs to Soham Chakraborty and should be not be used without permission.
+Free to be used and modified by anyone
+
+FUTURE SCOPE:
+This is an initial working draft where .Net MVC Framework has been used as API. No database has been used and all data are dummy.
+This needs to be converted to the latest .Net Core framework.
+More functionality enhancements need to be done as well as should be made as mobile compatible.
+Angular code should also be according to the standards, for example, service may be used to consume the API.
