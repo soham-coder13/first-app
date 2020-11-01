@@ -1,0 +1,42 @@
+.navbar{
+    background-color: lightseagreen !important;
+}
+.column {
+    float: left;
+    width: 30%;
+    padding: 10px; 
+    margin-top: 0.5%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .heading{
+    font-size: 28px; 
+    padding-top: 5px;
+    font-family: cursive;
+  }
+  .textbox{
+    background-color: cornsilk;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 20px;
+    border-radius: 6px;
+    float: right;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .searchspan {
+    margin-right: -200px;
+    margin-top: 4px;
+    z-index: 2;
+    float: right;
+    color: lightseagreen;
+}

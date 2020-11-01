@@ -1,0 +1,7 @@
+D:\C# Programs\Git\Promotion Engine\PromotionEngineAPI\CalculatePrice\bin\Debug\CalculatePrice.dll
+D:\C# Programs\Git\Promotion Engine\PromotionEngineAPI\CalculatePrice\bin\Debug\CalculatePrice.pdb
+D:\C# Programs\Git\Promotion Engine\PromotionEngineAPI\CalculatePrice\bin\Debug\Dal.dll
+D:\C# Programs\Git\Promotion Engine\PromotionEngineAPI\CalculatePrice\bin\Debug\Dal.pdb
+D:\C# Programs\Git\Promotion Engine\PromotionEngineAPI\CalculatePrice\obj\Debug\CalculatePrice.csprojResolveAssemblyReference.cache
+D:\C# Programs\Git\Promotion Engine\PromotionEngineAPI\CalculatePrice\obj\Debug\CalculatePrice.dll
+D:\C# Programs\Git\Promotion Engine\PromotionEngineAPI\CalculatePrice\obj\Debug\CalculatePrice.pdb

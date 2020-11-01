@@ -1,0 +1,77 @@
+b{
+    font-size: 24px;
+    font-family: Apple Chancery, cursive;
+    color: red;
+}
+.cover{
+    padding-top: 20px;
+    width: 100%;
+    height: 480px;
+    background: rgb(30,157,24);
+    background: linear-gradient(90deg, rgba(30,157,24,0.40098037506018036) 1%, rgba(0,212,255,0.10126048710499824) 70%); 
+}
+.row{
+    border: gray;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.item-image{
+    height: 50px;
+    width: 50px;
+    border-style: ridge !important;
+    border: lightblue;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.inline-div{
+    display: inline;
+}
+.left-main-div{
+    width: 60%; 
+    float: left;
+    margin: 10px;
+    height: 400px;
+}
+.right-main-div{
+    width: 30%; 
+    float: right;
+    margin: 10px;
+    padding-left: 10px;
+    border-left: 1px solid black;
+    height: 400px;
+}
+.checkout{
+    height: 40px;
+    width: 120px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+.checkout:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+.coupon{
+    background: lightyellow;
+    border: 1px;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.coupon:hover{
+    box-shadow: 2px 2px 5px darkcyan;
+    font-size: 16px;
+}
+.price-div{
+    width: 100%; 
+    text-align: center; 
+    padding-bottom: 10px;
+    font-size: x-large;
+    color: darkorchid
+}

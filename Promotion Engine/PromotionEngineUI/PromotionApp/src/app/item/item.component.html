@@ -1,0 +1,36 @@
+<div class="cover">
+    <div class="inline-div left-main-div">
+        <div class="row" *ngFor="let it of marketItems; index as ind">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="width: 6%;"><input style="width: 100%;" [(ngModel)]="it.item_count" (change)="itemAdded()" type="number" min="0"/></td>
+                    <td style="width: 5%;"><img class="item-image" src="{{it.item_image}}"/></td>
+                    <td style="width: 20%;"><b>{{it.item_name}}</b></td>
+                    <td style="text-align: right;"><i>Price: {{it.item_price}}</i></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="inline-div right-main-div">
+        <div style="width: 100%; text-align: center; padding-bottom: 10px;">
+            Items Added: {{selectedCount}}
+        </div>
+        <div [hidden]="!totalShow" class="price-div">
+            <u>{{totalAmount}}</u>
+        </div>
+        <div [hidden]="hideCoupons">
+            <table style="width: 60%; margin-left: 20%; padding-bottom: 30px;">
+                <tr *ngFor="let coup of coupons">
+                    <td>
+                        <div class="coupon">
+                            <input [(ngModel)]="couponSelected" [value]="coup.code" type="radio">{{coup.desc}}
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div [hidden]="hideCoupons" style="width: 100%; text-align: -webkit-center;">
+            <button class="checkout" (click)="checkedOut()">Checkout</button>
+        </div>
+    </div>
+</div>
