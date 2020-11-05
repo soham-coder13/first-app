@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
+  message : string = "";
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  recieveMessage($event){
+    this.message=$event;
   }
 
 }
