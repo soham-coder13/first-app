@@ -4,6 +4,7 @@ Promotion Engine.
 PROJECT DESCRIPTION:
 This is a simple program that will calculate the total price of items (A,B,C,D) bought after applying 
 discount (Coupon-1,Coupon-2,Coupon-3) on coupon selected by the User.
+The Search box can be used to search for a list of items as per keywords.
 
 PREREQUISITES:
 .Net Framework 4.8 and Visual Studio.
@@ -23,4 +24,3 @@ FUTURE SCOPE:
 This is an initial working draft where .Net MVC Framework has been used as API. No database has been used and all data are dummy.
 This needs to be converted to the latest .Net Core framework.
 More functionality enhancements need to be done as well as should be made as mobile compatible.
-Angular code should also be according to the standards, for example, service may be used to consume the API.

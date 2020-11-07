@@ -7,6 +7,7 @@ import { ApiService } from '../Services/api-service.service';
   templateUrl: './item.component.html',
   styleUrls: ['./item.component.scss']
 })
+
 export class ItemComponent implements OnInit {
 
   selectedCount : number = 0;
@@ -20,6 +21,7 @@ export class ItemComponent implements OnInit {
   itemListCount : number = 1;
   marketItems : Array<any>;
   coupons : Array<any>;
+  loading : boolean = false;
 
   constructor(private itemData: DataService, private apiData: ApiService) {
     this.marketItems = this.itemData.getMarketItems();
@@ -35,14 +37,18 @@ export class ItemComponent implements OnInit {
   }
 
   async checkedOut(){
+    this.totalShow = false;
+    this.loading = true;
     this.buildUrl();
     this.results = await this.apiData.callApi(this.linkUrl);
 
     if(this.results === undefined){
+      this.loading = false;
       this.totalAmount = "Error encountered!! Please try later...";
       this.totalShow = true;
     }
     else{
+      this.loading = false;
       this.totalAmount = "Total amount to be paid : " + this.results.totalAmount + " only";
       this.totalShow=true;
       this.hideCoupons=true;
