@@ -1,21 +1,22 @@
 ﻿using CalculatePrice;
 using Dal;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using PromotionEngineAPI.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-using System.Web.Http.Cors;
 
 namespace PromotionEngineAPI.Controllers
 {
-    public class PromotionController : ApiController
+    [Route("api/[controller]")]
+    [ApiController]
+    [EnableCors("ApiPolicy")]
+    public class PromotionController : ControllerBase
     {
         [HttpGet]
-        public ResultModel GetPrice(int item_a, int item_b, int item_c, int item_d, string promotion="")
+        public ResultModel GetPrice(int item_a, int item_b, int item_c, int item_d, string promotion = "")
         {
             decimal totalPrice = 0.0m;
             FinalPrice totalCost = new FinalPrice();

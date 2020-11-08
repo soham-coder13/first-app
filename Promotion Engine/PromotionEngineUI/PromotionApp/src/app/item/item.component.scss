@@ -56,6 +56,10 @@ b{
     cursor: pointer;
     font-weight: bolder;
 }
+.checkout:disabled{
+    background: #dddddd;
+    pointer-events: none;
+}
 .coupon{
     background: lightyellow;
     border: 1px;

@@ -1,0 +1,8 @@
+D:\C# Programs\Git\PromotionEngineAPI\Dal\bin\Debug\netcoreapp2.1\Dal.deps.json
+D:\C# Programs\Git\PromotionEngineAPI\Dal\bin\Debug\netcoreapp2.1\Dal.dll
+D:\C# Programs\Git\PromotionEngineAPI\Dal\bin\Debug\netcoreapp2.1\Dal.pdb
+D:\C# Programs\Git\PromotionEngineAPI\Dal\obj\Debug\netcoreapp2.1\Dal.csproj.CoreCompileInputs.cache
+D:\C# Programs\Git\PromotionEngineAPI\Dal\obj\Debug\netcoreapp2.1\Dal.AssemblyInfoInputs.cache
+D:\C# Programs\Git\PromotionEngineAPI\Dal\obj\Debug\netcoreapp2.1\Dal.AssemblyInfo.cs
+D:\C# Programs\Git\PromotionEngineAPI\Dal\obj\Debug\netcoreapp2.1\Dal.dll
+D:\C# Programs\Git\PromotionEngineAPI\Dal\obj\Debug\netcoreapp2.1\Dal.pdb

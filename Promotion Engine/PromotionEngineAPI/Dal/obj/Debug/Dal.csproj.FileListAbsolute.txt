@@ -1,5 +1,0 @@
-D:\C# Programs\Git\Promotion Engine\PromotionEngineAPI\Dal\bin\Debug\Dal.dll
-D:\C# Programs\Git\Promotion Engine\PromotionEngineAPI\Dal\bin\Debug\Dal.pdb
-D:\C# Programs\Git\Promotion Engine\PromotionEngineAPI\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
-D:\C# Programs\Git\Promotion Engine\PromotionEngineAPI\Dal\obj\Debug\Dal.dll
-D:\C# Programs\Git\Promotion Engine\PromotionEngineAPI\Dal\obj\Debug\Dal.pdb

@@ -1,0 +1,12 @@
+D:\C# Programs\Git\PromotionEngineAPI\Calculate Price\bin\Debug\netcoreapp2.1\Calculate Price.deps.json
+D:\C# Programs\Git\PromotionEngineAPI\Calculate Price\bin\Debug\netcoreapp2.1\Calculate Price.dll
+D:\C# Programs\Git\PromotionEngineAPI\Calculate Price\bin\Debug\netcoreapp2.1\Calculate Price.pdb
+D:\C# Programs\Git\PromotionEngineAPI\Calculate Price\bin\Debug\netcoreapp2.1\Dal.dll
+D:\C# Programs\Git\PromotionEngineAPI\Calculate Price\bin\Debug\netcoreapp2.1\Dal.pdb
+D:\C# Programs\Git\PromotionEngineAPI\Calculate Price\obj\Debug\netcoreapp2.1\Calculate Price.csprojAssemblyReference.cache
+D:\C# Programs\Git\PromotionEngineAPI\Calculate Price\obj\Debug\netcoreapp2.1\Calculate Price.csproj.CoreCompileInputs.cache
+D:\C# Programs\Git\PromotionEngineAPI\Calculate Price\obj\Debug\netcoreapp2.1\Calculate Price.AssemblyInfoInputs.cache
+D:\C# Programs\Git\PromotionEngineAPI\Calculate Price\obj\Debug\netcoreapp2.1\Calculate Price.AssemblyInfo.cs
+D:\C# Programs\Git\PromotionEngineAPI\Calculate Price\obj\Debug\netcoreapp2.1\Calculate Price.csproj.CopyComplete
+D:\C# Programs\Git\PromotionEngineAPI\Calculate Price\obj\Debug\netcoreapp2.1\Calculate Price.dll
+D:\C# Programs\Git\PromotionEngineAPI\Calculate Price\obj\Debug\netcoreapp2.1\Calculate Price.pdb

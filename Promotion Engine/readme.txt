@@ -22,5 +22,6 @@ Free to be used and modified by anyone
 
 FUTURE SCOPE:
 This is an initial working draft where .Net MVC Framework has been used as API. No database has been used and all data are dummy.
-This needs to be converted to the latest .Net Core framework.
+Logging can be implemented
+Token system may be implemented
 More functionality enhancements need to be done as well as should be made as mobile compatible.

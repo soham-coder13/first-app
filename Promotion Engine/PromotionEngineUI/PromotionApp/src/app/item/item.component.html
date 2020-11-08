@@ -36,7 +36,7 @@
             </table>
         </div>
         <div [hidden]="hideCoupons" style="width: 100%; text-align: -webkit-center;">
-            <button class="checkout" (click)="checkedOut()">Checkout</button>
+            <button [disabled]="loading" class="checkout" (click)="checkedOut()">Checkout</button>
         </div>
     </div>
 </div>

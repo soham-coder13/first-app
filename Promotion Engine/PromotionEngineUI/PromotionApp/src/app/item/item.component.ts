@@ -56,7 +56,7 @@ export class ItemComponent implements OnInit {
   }
 
   buildUrl(){
-    this.linkUrl="http://localhost:60772/marketAPI/Promotion?";
+    this.linkUrl="https://localhost:5001/api/Promotion?";
     for(var item of this.marketItems){
       this.linkUrl+=item.item_code+"="+item.item_count+"&";
     }
