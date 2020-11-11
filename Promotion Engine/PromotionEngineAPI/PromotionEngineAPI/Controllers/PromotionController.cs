@@ -1,5 +1,6 @@
 ﻿using CalculatePrice;
 using Dal;
+using log4net;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using PromotionEngineAPI.Model;
@@ -15,21 +16,35 @@ namespace PromotionEngineAPI.Controllers
     [EnableCors("ApiPolicy")]
     public class PromotionController : ControllerBase
     {
+        ILog _logger = LogManager.GetLogger(typeof(PromotionController));
+
         [HttpGet]
         public ResultModel GetPrice(int item_a, int item_b, int item_c, int item_d, string promotion = "")
         {
-            decimal totalPrice = 0.0m;
-            FinalPrice totalCost = new FinalPrice();
+            try
+            {
+                _logger.Info($"Price requested. Promo applied: {promotion}");
 
-            Dictionary<string, int> dict_cart = new Dictionary<string, int>();
-            dict_cart.Add("A", item_a);
-            dict_cart.Add("B", item_b);
-            dict_cart.Add("C", item_c);
-            dict_cart.Add("D", item_d);
+                decimal totalPrice = 0.0m;
+                FinalPrice totalCost = new FinalPrice();
 
-            totalPrice = totalCost.CalculatePriceAfterDiscounts(dict_cart, promotion);
+                Dictionary<string, int> dict_cart = new Dictionary<string, int>();
+                dict_cart.Add("A", item_a);
+                dict_cart.Add("B", item_b);
+                dict_cart.Add("C", item_c);
+                dict_cart.Add("D", item_d);
 
-            return new ResultModel { totalAmount = totalPrice };
+                totalPrice = totalCost.CalculatePriceAfterDiscounts(dict_cart, promotion);
+
+                _logger.Debug($"Total Price: {totalPrice}");
+
+                return new ResultModel { totalAmount = totalPrice };
+            }
+            catch(Exception ex)
+            {
+                _logger.Error(ex);
+                return null;
+            }
         }
 
         private decimal GetTotalPrice(Dictionary<string, int> dict_cart)

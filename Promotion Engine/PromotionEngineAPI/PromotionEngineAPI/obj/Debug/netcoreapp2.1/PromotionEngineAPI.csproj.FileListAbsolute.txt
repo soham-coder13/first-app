@@ -17,3 +17,22 @@ D:\C# Programs\Git\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1
 D:\C# Programs\Git\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.csproj.CopyComplete
 D:\C# Programs\Git\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.dll
 D:\C# Programs\Git\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.pdb
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\bin\Debug\netcoreapp2.1\PromotionEngineAPI.deps.json
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\bin\Debug\netcoreapp2.1\PromotionEngineAPI.runtimeconfig.json
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\bin\Debug\netcoreapp2.1\PromotionEngineAPI.runtimeconfig.dev.json
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\bin\Debug\netcoreapp2.1\PromotionEngineAPI.dll
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\bin\Debug\netcoreapp2.1\PromotionEngineAPI.pdb
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\bin\Debug\netcoreapp2.1\Calculate Price.dll
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\bin\Debug\netcoreapp2.1\Dal.dll
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\bin\Debug\netcoreapp2.1\Calculate Price.pdb
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\bin\Debug\netcoreapp2.1\Dal.pdb
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.csprojAssemblyReference.cache
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.csproj.CoreCompileInputs.cache
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.RazorAssemblyInfo.cache
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.RazorAssemblyInfo.cs
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.AssemblyInfoInputs.cache
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.AssemblyInfo.cs
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.RazorTargetAssemblyInfo.cache
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.csproj.CopyComplete
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.dll
+D:\C# Programs\Git\first-app\Promotion Engine\PromotionEngineAPI\PromotionEngineAPI\obj\Debug\netcoreapp2.1\PromotionEngineAPI.pdb
