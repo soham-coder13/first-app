@@ -1,2 +1,4 @@
 2020-11-11 22:18:33,248 [8] INFO PromotionEngineAPI.Controllers.PromotionController - Price requested. Promo applied: Apply-A
 2020-11-11 22:18:33,339 [8] DEBUG PromotionEngineAPI.Controllers.PromotionController - Total Price: 115.0
+2021-04-10 12:20:21,895 [10] INFO PromotionEngineAPI.Controllers.PromotionController - Price requested. Promo applied: Apply-A
+2021-04-10 12:20:24,259 [10] DEBUG PromotionEngineAPI.Controllers.PromotionController - Total Price: 115.0
