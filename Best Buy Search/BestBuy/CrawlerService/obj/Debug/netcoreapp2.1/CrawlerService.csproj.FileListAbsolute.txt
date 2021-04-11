@@ -1,0 +1,8 @@
+C:\BestBuy\CrawlerService\bin\Debug\netcoreapp2.1\CrawlerService.deps.json
+C:\BestBuy\CrawlerService\bin\Debug\netcoreapp2.1\CrawlerService.dll
+C:\BestBuy\CrawlerService\bin\Debug\netcoreapp2.1\CrawlerService.pdb
+C:\BestBuy\CrawlerService\obj\Debug\netcoreapp2.1\CrawlerService.csproj.CoreCompileInputs.cache
+C:\BestBuy\CrawlerService\obj\Debug\netcoreapp2.1\CrawlerService.AssemblyInfoInputs.cache
+C:\BestBuy\CrawlerService\obj\Debug\netcoreapp2.1\CrawlerService.AssemblyInfo.cs
+C:\BestBuy\CrawlerService\obj\Debug\netcoreapp2.1\CrawlerService.dll
+C:\BestBuy\CrawlerService\obj\Debug\netcoreapp2.1\CrawlerService.pdb

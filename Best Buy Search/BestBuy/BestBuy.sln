@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1433
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestBuy", "BestBuy\BestBuy.csproj", "{3CE12272-135C-4C13-B0E9-21C465241A6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestBuy", "BestBuy\BestBuy.csproj", "{3CE12272-135C-4C13-B0E9-21C465241A6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrawlerService", "CrawlerService\CrawlerService.csproj", "{960DC53E-3D00-4A1A-8100-9BD2D83BE614}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3CE12272-135C-4C13-B0E9-21C465241A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CE12272-135C-4C13-B0E9-21C465241A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CE12272-135C-4C13-B0E9-21C465241A6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{960DC53E-3D00-4A1A-8100-9BD2D83BE614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{960DC53E-3D00-4A1A-8100-9BD2D83BE614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{960DC53E-3D00-4A1A-8100-9BD2D83BE614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{960DC53E-3D00-4A1A-8100-9BD2D83BE614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
