@@ -41,26 +41,33 @@ namespace CrawlerService
 
             foreach (var result in searchResults)
             {
-                var sp = result.Descendants("span").Where(s => s.InnerHtml.ToLower().Equals("sponsored"));
-                if (sp.Count() > 0)
-                    continue;
-
-                string name = result.Descendants("h2").FirstOrDefault().Descendants("span").FirstOrDefault().InnerText;
-                string link = result.Descendants("h2").FirstOrDefault().Descendants("a").FirstOrDefault().GetAttributeValue("href", "");
-                //string rating = result.Descendants("i").FirstOrDefault().Descendants("span").FirstOrDefault().InnerText;
-                string price = result.Descendants("span").Where(s => s.GetAttributeValue("class", "").Equals("a-price-whole")).FirstOrDefault().InnerText;
-
-                if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(link) && !string.IsNullOrEmpty(price))
+                try
                 {
-                    Item item = new Item
-                    {
-                        Name = name,
-                        Link = baseUrl + link,
-                        Price = Convert.ToDecimal(price)
-                    };
+                    var sp = result.Descendants("span").Where(s => s.InnerHtml.ToLower().Equals("sponsored"));
+                    if (sp.Count() > 0)
+                        continue;
 
-                    items.Add(item);
+                    string name = result.Descendants("h2").FirstOrDefault().Descendants("span").FirstOrDefault().InnerText;
+                    string link = result.Descendants("h2").FirstOrDefault().Descendants("a").FirstOrDefault().GetAttributeValue("href", "");
+                    //string rating = result.Descendants("i").FirstOrDefault().Descendants("span").FirstOrDefault().InnerText;
+                    string price = result.Descendants("span").Where(s => s.GetAttributeValue("class", "").Equals("a-price-whole")).FirstOrDefault().InnerText;
+                    string image = result.Descendants("img").FirstOrDefault().GetAttributeValue("src", "");
+
+                    if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(link) && !string.IsNullOrEmpty(price))
+                    {
+                        Item item = new Item
+                        {
+                            Name = name,
+                            Link = baseUrl + link,
+                            Source = "Amazon",
+                            Price = Convert.ToDecimal(price.Trim('₹')),
+                            Image = image
+                        };
+
+                        items.Add(item);
+                    }
                 }
+                catch (Exception) { }
             }
 
             return items;
@@ -81,22 +88,29 @@ namespace CrawlerService
 
             foreach (var result in searchResults)
             {
-                string title = result.Descendants("div").FirstOrDefault().InnerText;
-                string desc = result.Descendants("a").FirstOrDefault().GetAttributeValue("title", "");
-                string link = result.Descendants("a").FirstOrDefault().GetAttributeValue("href", "");
-                string price = result.Descendants("a").LastOrDefault().Descendants("div").FirstOrDefault().Descendants("div").FirstOrDefault().InnerText;
-
-                if (!string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(desc) && !string.IsNullOrEmpty(link) && !string.IsNullOrEmpty(price))
+                try
                 {
-                    Item item = new Item
-                    {
-                        Name = title + " " + desc,
-                        Link = baseUrl + link,
-                        Price = Convert.ToDecimal(price.Trim('₹'))
-                    };
+                    string title = result.Descendants("div").FirstOrDefault().InnerText;
+                    string desc = result.Descendants("a").FirstOrDefault().GetAttributeValue("title", "");
+                    string link = result.Descendants("a").FirstOrDefault().GetAttributeValue("href", "");
+                    string price = result.Descendants("a").LastOrDefault().Descendants("div").FirstOrDefault().Descendants("div").FirstOrDefault().InnerText;
+                    string image = result.PreviousSibling.Descendants("img").FirstOrDefault().GetAttributeValue("src", "");
 
-                    items.Add(item);
+                    if (!string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(desc) && !string.IsNullOrEmpty(link) && !string.IsNullOrEmpty(price))
+                    {
+                        Item item = new Item
+                        {
+                            Name = title + " " + desc,
+                            Link = baseUrl + link,
+                            Source = "Flipkart",
+                            Price = Convert.ToDecimal(price.Trim('₹')),
+                            Image = image
+                        };
+
+                        items.Add(item);
+                    }
                 }
+                catch (Exception) { }
             }
 
             return items;
@@ -117,21 +131,28 @@ namespace CrawlerService
 
             foreach (var result in searchResults)
             {
-                string name = result.Descendants("div").Where(d => d.GetAttributeValue("class", "").Equals("UGUy")).FirstOrDefault().InnerText;
-                string link = result.Descendants("a").FirstOrDefault().GetAttributeValue("href", "");
-                string price = result.Descendants("div").Where(d => d.GetAttributeValue("class", "").Equals("_1kMS")).FirstOrDefault().InnerText;
-
-                if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(link) && !string.IsNullOrEmpty(price))
+                try
                 {
-                    Item item = new Item
-                    {
-                        Name = name,
-                        Link = baseUrl + link,
-                        Price = Convert.ToDecimal(price.Trim('"'))
-                    };
+                    string name = result.Descendants("div").Where(d => d.GetAttributeValue("class", "").Equals("UGUy")).FirstOrDefault().InnerText;
+                    string link = result.Descendants("a").FirstOrDefault().GetAttributeValue("href", "");
+                    string price = result.Descendants("div").Where(d => d.GetAttributeValue("class", "").Equals("_1kMS")).FirstOrDefault().InnerText;
+                    string image = result.Descendants("img").FirstOrDefault().GetAttributeValue("src", "");
 
-                    items.Add(item);
+                    if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(link) && !string.IsNullOrEmpty(price))
+                    {
+                        Item item = new Item
+                        {
+                            Name = name,
+                            Link = baseUrl + link,
+                            Source = "Paytm Mall",
+                            Price = Convert.ToDecimal(price.Trim('₹')),
+                            Image = image
+                        };
+
+                        items.Add(item);
+                    }
                 }
+                catch (Exception) { }
             }
 
             return items;
