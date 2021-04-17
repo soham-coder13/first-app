@@ -9,10 +9,12 @@ namespace CrawlerService
         private static string amazon = "https://www.amazon.in/s?k=";
         private static string flipkart = "https://www.flipkart.com/search?q=";
         private static string paytm = "https://paytmmall.com/shop/search?q=";
+        private static string snapdeal = "https://www.snapdeal.com/search?keyword=";
 
         private static string amazonUrl = "https://www.amazon.in";
         private static string flipkartUrl = "https://www.flipkart.com";
         private static string paytmUrl = "https://paytmmall.com";
+        private static string snapdealUrl = "https://www.snapdeal.com";
 
         public static string AmazonLink
         {
@@ -38,6 +40,14 @@ namespace CrawlerService
             }
         }
 
+        public static string SnapdealLink
+        {
+            get
+            {
+                return snapdeal;
+            }
+        }
+
         public static string AmazonUrl
         {
             get
@@ -59,6 +69,14 @@ namespace CrawlerService
             get
             {
                 return paytmUrl;
+            }
+        }
+
+        public static string SnapdealUrl
+        {
+            get
+            {
+                return snapdealUrl;
             }
         }
     }

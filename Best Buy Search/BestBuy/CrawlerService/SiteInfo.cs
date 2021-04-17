@@ -23,6 +23,9 @@ namespace CrawlerService
             items = await FetchItemsFromPaytm(Sites.PaytmUrl, Sites.PaytmLink, searchItem);
             itemList.AddRange(items);
 
+            items = await FetchItemsFromSnapdeal(Sites.SnapdealUrl, Sites.SnapdealLink, searchItem);
+            itemList.AddRange(items);
+
             return itemList;
         }
 
@@ -83,20 +86,38 @@ namespace CrawlerService
 
             //get the main div where each items are placed within
             var searchResults = doc.DocumentNode.Descendants("div")
-                                                .Where(div => div.GetAttributeValue("class", "")
-                                                .Equals("_2B099V")).ToList();
+                                                .Where(div => div.GetAttributeValue("class", "").Equals("_2B099V") 
+                                                || div.GetAttributeValue("class", "").Equals("_4ddWXP")).ToList();
 
             foreach (var result in searchResults)
             {
                 try
                 {
                     string title = result.Descendants("div").FirstOrDefault().InnerText;
-                    string desc = result.Descendants("a").FirstOrDefault().GetAttributeValue("title", "");
-                    string link = result.Descendants("a").FirstOrDefault().GetAttributeValue("href", "");
+                    if (title.Trim().ToLower().Equals("ad"))
+                        continue;
+                    string desc = string.Empty;
+                    foreach (var node in result.Descendants("a"))
+                    {
+                        if (!string.IsNullOrEmpty(node.GetAttributeValue("title", "")))
+                        {
+                            desc = node.GetAttributeValue("title", "");
+                            break;
+                        }
+                    }
+                    string link = string.Empty;
+                    foreach (var node in result.Descendants("a"))
+                    {
+                        if (!string.IsNullOrEmpty(node.GetAttributeValue("href", "")))
+                        {
+                            link = node.GetAttributeValue("href", "");
+                            break;
+                        }
+                    }
                     string price = result.Descendants("a").LastOrDefault().Descendants("div").FirstOrDefault().Descendants("div").FirstOrDefault().InnerText;
-                    string image = result.PreviousSibling.Descendants("img").FirstOrDefault().GetAttributeValue("src", "");
+                    string image = string.Empty; //result.PreviousSibling.Descendants("img").FirstOrDefault().GetAttributeValue("src", "");
 
-                    if (!string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(desc) && !string.IsNullOrEmpty(link) && !string.IsNullOrEmpty(price))
+                    if ((!string.IsNullOrEmpty(title) || !string.IsNullOrEmpty(desc)) && !string.IsNullOrEmpty(link) && !string.IsNullOrEmpty(price))
                     {
                         Item item = new Item
                         {
@@ -146,6 +167,48 @@ namespace CrawlerService
                             Link = baseUrl + link,
                             Source = "Paytm Mall",
                             Price = Convert.ToDecimal(price.Trim('₹')),
+                            Image = image
+                        };
+
+                        items.Add(item);
+                    }
+                }
+                catch (Exception) { }
+            }
+
+            return items;
+        }
+
+        private static async Task<List<Item>> FetchItemsFromSnapdeal(string baseUrl, string searchUrl, string searchItem)
+        {
+            List<Item> items = new List<Item>();
+            var client = new HttpClient();
+            var doc = new HtmlDocument();
+
+            doc.LoadHtml(await client.GetStringAsync(searchUrl + searchItem));
+
+            //get the main div where each items are placed within
+            var searchResults = doc.DocumentNode.Descendants("div")
+                                                .Where(div => div.GetAttributeValue("class", "")
+                                                .Contains("product-tuple-listing")).ToList();
+
+            foreach (var result in searchResults)
+            {
+                try
+                {
+                    string name = result.Descendants("div").Where(d => d.GetAttributeValue("class", "").Equals("product-tuple-description ")).FirstOrDefault().Descendants("p").FirstOrDefault().InnerText;
+                    string link = result.Descendants("div").Where(d => d.GetAttributeValue("class", "").Equals("product-tuple-description ")).FirstOrDefault().Descendants("a").FirstOrDefault().GetAttributeValue("href", "");
+                    string price = result.Descendants("div").Where(d => d.GetAttributeValue("class", "").Equals("product-tuple-description ")).FirstOrDefault().Descendants("span").Where(s => s.GetAttributeValue("class", "").Contains("product-desc-price")).FirstOrDefault().InnerText;
+                    string image = result.Descendants("img").FirstOrDefault().GetAttributeValue("src", "");
+
+                    if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(link) && !string.IsNullOrEmpty(price))
+                    {
+                        Item item = new Item
+                        {
+                            Name = name,
+                            Link = link,
+                            Source = "Snapdeal",
+                            Price = Convert.ToDecimal(price.Split(' ')[1].Replace(",", string.Empty)),
                             Image = image
                         };
 
