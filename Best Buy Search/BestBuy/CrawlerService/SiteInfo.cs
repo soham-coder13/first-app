@@ -14,17 +14,16 @@ namespace CrawlerService
         {
             List<Item> itemList = new List<Item>();
 
-            var items = await FetchItemsFromAmazon(Sites.AmazonUrl, Sites.AmazonLink, searchItem);
-            itemList.AddRange(items);
+            var amazonTask = FetchItemsFromAmazon(Sites.AmazonUrl, Sites.AmazonLink, searchItem);
+            var flipkartTask = FetchItemsFromFlipkart(Sites.FlipkartUrl, Sites.FlipkartLink, searchItem);
+            var paytmTask = FetchItemsFromPaytm(Sites.PaytmUrl, Sites.PaytmLink, searchItem);
+            var snapdealTask = FetchItemsFromSnapdeal(Sites.SnapdealUrl, Sites.SnapdealLink, searchItem);
 
-            items = await FetchItemsFromFlipkart(Sites.FlipkartUrl, Sites.FlipkartLink, searchItem);
-            itemList.AddRange(items);
-
-            items = await FetchItemsFromPaytm(Sites.PaytmUrl, Sites.PaytmLink, searchItem);
-            itemList.AddRange(items);
-
-            items = await FetchItemsFromSnapdeal(Sites.SnapdealUrl, Sites.SnapdealLink, searchItem);
-            itemList.AddRange(items);
+            await Task.WhenAll(amazonTask, flipkartTask, paytmTask, snapdealTask);
+            itemList.AddRange(await amazonTask);
+            itemList.AddRange(await flipkartTask);
+            itemList.AddRange(await paytmTask);
+            itemList.AddRange(await snapdealTask);
 
             return itemList;
         }

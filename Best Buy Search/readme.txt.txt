@@ -11,11 +11,10 @@ Version-1: Gets a list of top 20 items as per prices starting from lowest to hig
 Version-2: Added load more button that will enable users to view more items incremented by 20.
 Added new loader sprinner.
 Added session to store already searched items; this will enable faster search results.
-Added Snapdeal site for item search.
+Version-3: Added Snapdeal site for item search and added tasks for parallel threads.
 Scope of improvement:
 1. Add items from more such E-Commerce sites
 2. User should have the capability to view items based on other criteria as well such as price highest to lowest.
 3. Algorithm to get items' details can be made better.
-4. Use thread in API to fetch items faster.
-5. Flipkart images cannot be retrieved at the moment, might need to be fetched from the item detail page.
-6. User should have options for various filter criteria.
+4. Flipkart images cannot be retrieved at the moment, might need to be fetched from the item detail page.
+5. User should have options for various filter criteria.
