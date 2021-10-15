@@ -3485,11 +3485,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\BestBuy\\CrawlerService\\CrawlerService.csproj",
+      "projectUniqueName": "D:\\C# Programs\\Git\\first-app\\Best Buy Search\\BestBuy\\CrawlerService\\CrawlerService.csproj",
       "projectName": "CrawlerService",
-      "projectPath": "C:\\BestBuy\\CrawlerService\\CrawlerService.csproj",
+      "projectPath": "D:\\C# Programs\\Git\\first-app\\Best Buy Search\\BestBuy\\CrawlerService\\CrawlerService.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\BestBuy\\CrawlerService\\obj\\",
+      "outputPath": "D:\\C# Programs\\Git\\first-app\\Best Buy Search\\BestBuy\\CrawlerService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,0 +1,34 @@
+﻿@page
+@model WorkflowManager.Pages.ApprovalFormModel
+@{}
+
+<script>
+    function sendRequest() {
+        var id = document.getElementById("Id").value;
+        var authorName = document.getElementById("AuthorName").value;
+        var authorEmail = document.getElementById("AuthorEmail").value;
+        var comment = document.getElementById("Comment").value;
+        var location = document.getElementById("Location").value;
+
+        $.get('/api/approval?id=' + id + '&authorName=' + authorName + '&authorEmail=' + authorEmail + '&comment=' + comment + '&location=' + location,
+            function (result) {
+                $(".message").show();
+                document.getElementById("message").innerHTML = result;
+            }
+        );
+    }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+
+<h1>Document Approval Form</h1>
+<hr />
+<div style="margin-left: 30%">
+    <input type="text" id="Id" placeholder="ID" style="width: 50%; padding: 12px 20px; margin: 8px 0px; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" /><br /><br />
+    <input type="text" id="AuthorName" placeholder="Author Name" style="width: 50%; padding: 12px 20px; margin: 8px 0px; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" /><br /><br />
+    <input type="text" id="AuthorEmail" placeholder="Author Email" style="width: 50%; padding: 12px 20px; margin: 8px 0px; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" /><br /><br />
+    <input type="text" id="Comment" placeholder="Comment" style="width: 50%; padding: 12px 20px; margin: 8px 0px; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" /><br /><br />
+    <input type="text" id="Location" placeholder="Location" style="width: 50%; padding: 12px 20px; margin: 8px 0px; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" /><br /><br />
+    <button onclick="sendRequest()" style="width: 50%; background-color: #4CAF50; color: white; padding: 14px 20px; margin: 8px 0px; border: none; border-radius: 4px; cursor: pointer;" >Send</button>
+</div>
+<div id="message" class="message" style="display: none; width: 80%; font-weight: 800; border: dashed; margin-left: 10%; padding: 20px; margin-top: 50px; font-size: 24px;">
+</div>
